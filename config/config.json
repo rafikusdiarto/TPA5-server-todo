@@ -14,8 +14,8 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "tihagi",
-    "password": "123456",
+    "username": "root",
+    "password": "",
     "database": "db_todo",
     "host": "127.0.0.1",
     "dialect": "mysql"
