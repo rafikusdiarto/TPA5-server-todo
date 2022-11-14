@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
-const allRouter = require("./routes/todoRouter");
-const db = require('./config/config.json')
+const allRouter = require("./routes/router");
+require('./config/config.json')
 
 const PORT = 4040;
 

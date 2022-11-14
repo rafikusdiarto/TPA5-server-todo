@@ -1,0 +1,32 @@
+GET http://localhost:4040/todo/all-todo
+
+###
+GET http://localhost:4040/todo/all-todo/2
+
+###
+POST http://localhost:4040/todo/all-todo
+Content-Type: application/json
+
+{
+    "id":3,
+    "item": "Kuliahh",
+    "deskripsi": "mendadak",
+}
+
+###
+PATCH http://localhost:4040/todo/all-todo/2
+# update data pada tabel
+Content-Type: application/json
+{
+    "item": "ngopi",
+    "deskripsi": "santuy",
+}
+
+
+###
+GET http://localhost:4040/user/all-user/register
+
+###
+GET http://localhost:4040/user/all-user/login
+
+

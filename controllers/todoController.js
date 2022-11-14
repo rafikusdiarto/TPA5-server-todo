@@ -1,5 +1,5 @@
-var models = require('../models'); // loads index.js
-var myTodo = models.todos;
+const models = require('../models'); // loads index.js
+const myTodo = models.todos;
 
 const readTodo = async(req, res) => {
   try {
