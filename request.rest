@@ -8,25 +8,49 @@ POST http://localhost:4040/todo/all-todo
 Content-Type: application/json
 
 {
-    "id":3,
-    "item": "Kuliahh",
-    "deskripsi": "mendadak",
+    "item": "Makan",
+    "deskripsi": "mendadak"
 }
 
 ###
 PATCH http://localhost:4040/todo/all-todo/2
-# update data pada tabel
 Content-Type: application/json
+
 {
     "item": "ngopi",
-    "deskripsi": "santuy",
+    "deskripsi": "santuy"
+}
+
+###
+DELETE  http://localhost:4040/todo/all-todo/2
+
+###
+DELETE http://localhost:4040/todo/all-todo
+
+
+
+#authentication and authorization
+
+###
+POST http://localhost:4040/auth/signup
+Content-Type: application/json
+
+{
+    "username": "rafi",
+    "email": "rawon@gmail.com",
+    "password":"123"
+}
+
+###
+POST http://localhost:4040/auth/signin
+Content-Type: application/json
+
+{
+    "username": "rafi",
+    "email": "rawon@gmail.com",
+    "password":"123"
 }
 
 
 ###
-GET http://localhost:4040/user/all-user/register
-
-###
-GET http://localhost:4040/user/all-user/login
-
-
+GET http://localhost:4040/users/moderator
